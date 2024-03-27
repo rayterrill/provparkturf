@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <title>ProvParkTurf</title>
+  </head>
+  <body class="bg-dark">
+    <div class="h-100 d-flex align-items-center justify-content-center text-white align-middle min-vh-100">
+        <div class="card">
+            <div class="card-header text-center text-dark font-weight-bold" style="background-color:orangered;">
+                <h1>IT HAS BEEN</h1>
+            </div>
+            <div class="card-body">
+                <h2>
+                    <div class="text-center text-dark display-1 font-weight-bold" id="spanDate"></div>
+                    <div class="pt-4 text-center text-dark">SINCE THE LAST SEASON-ENDING INJURY ON THE PROVIDENCE PARK TURF</div>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var today = new Date();
+        var lastInjury = new Date('March 24, 2024')
+        var difference = today - lastInjury;
+        var differenceInDays = Math.round(difference / (1000 * 3600 * 24));
+        document.getElementById("spanDate").innerHTML = differenceInDays + " DAYS";
+    </script>
+  </body>
+</html>
